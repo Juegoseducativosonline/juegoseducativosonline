@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,42 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portal de Juegos Educativos</title>
   <style>
+    /* Menú fijo */
+    nav {
+      background: #ffffff;
+      border-bottom: 2px solid #ddd;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #42a5f5;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
       background: #f0f4f8;
       margin: 0;
       padding: 0;
     }
+
     header {
       background: linear-gradient(45deg, #42a5f5, #478ed1);
       color: white;
       text-align: center;
       padding: 30px 10px;
     }
+
     header h1 {
       margin: 0;
       font-size: 2.5em;
     }
+
     main {
       max-width: 1000px;
       margin: auto;
       padding: 40px 20px;
     }
+
     .category {
       margin-bottom: 40px;
     }
+
     .category h2 {
       font-size: 1.8em;
       color: #333;
       border-left: 8px solid #42a5f5;
       padding-left: 10px;
     }
+
     .games {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
       margin-top: 15px;
     }
+
     .game-card {
       background: white;
       border-radius: 12px;
@@ -51,9 +73,11 @@
       text-align: center;
       transition: transform 0.3s;
     }
+
     .game-card:hover {
       transform: translateY(-5px);
     }
+
     .game-card a {
       text-decoration: none;
       color: #42a5f5;
@@ -63,6 +87,11 @@
   </style>
 </head>
 <body>
+
+  <nav>
+    <a href="/juegos-educativos/index.html">🏠 Inicio</a>
+  </nav>
+
   <header>
     <h1>🎮 Juegos Educativos Interactivos</h1>
     <p>Aprende divirtiéndote en diferentes áreas del conocimiento</p>
@@ -100,5 +129,6 @@
       </div>
     </section>
   </main>
+
 </body>
 </html>
