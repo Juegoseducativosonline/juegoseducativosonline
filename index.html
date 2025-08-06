@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portal de Juegos Educativos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(45deg, #42a5f5, #478ed1);
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .category {
+      margin-bottom: 40px;
+    }
+    .category h2 {
+      font-size: 1.8em;
+      color: #333;
+      border-left: 8px solid #42a5f5;
+      padding-left: 10px;
+    }
+    .games {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 15px;
+    }
+    .game-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 1 1 220px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .game-card:hover {
+      transform: translateY(-5px);
+    }
+    .game-card a {
+      text-decoration: none;
+      color: #42a5f5;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎮 Juegos Educativos Interactivos</h1>
+    <p>Aprende divirtiéndote en diferentes áreas del conocimiento</p>
+  </header>
+
+  <main>
+    <section class="category">
+      <h2>🧮 Matemáticas</h2>
+      <div class="games">
+        <div class="game-card"><a href="matematicas/division.html">Práctica de División</a></div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>📖 Español</h2>
+      <div class="games">
+        <div class="game-card"><a href="espanol/juego-lectura.html">Comprensión de lectura</a></div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>🌎 Sociales</h2>
+      <div class="games">
+        <div class="game-card"><a href="sociales/quiz-historia.html">Quiz de historia</a></div>
+      </div>
+    </section>
+
+    <section class="category">
+      <h2>🌿 Naturales</h2>
+      <div class="games">
+        <div class="game-card"><a href="naturales/juego-plantas.html">Conociendo las plantas</a></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
